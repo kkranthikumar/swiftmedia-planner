@@ -1,6 +1,8 @@
+
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
+import { Home } from 'lucide-react';
 
 const Navbar = () => {
   return (
@@ -11,6 +13,10 @@ const Navbar = () => {
         </Link>
         
         <div className="space-x-4">
+          <Link to="/" className="text-gray-600 hover:text-gray-800 transition-colors flex items-center gap-2">
+            <Home size={16} />
+            Home
+          </Link>
           <Link to="/about" className="text-gray-600 hover:text-gray-800 transition-colors">About</Link>
           <Link to="/services" className="text-gray-600 hover:text-gray-800 transition-colors">Services</Link>
           <Link to="/pricing" className="text-gray-600 hover:text-gray-800 transition-colors">Pricing</Link>
