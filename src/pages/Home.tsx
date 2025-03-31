@@ -32,8 +32,8 @@ const Home = () => {
                 <div className="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[500px] rounded-full bg-brand-200/30 blur-3xl"></div>
                 <div className="bg-white rounded-xl shadow-2xl p-8 relative">
                   <img 
-                    src="https://placehold.co/600x400/e4d8ff/333333?text=AI+Media+Planning+Dashboard" 
-                    alt="Media Planning Dashboard" 
+                    src="https://assets.website-files.com/63f58aaba6543ecf1e3d7e47/644fd97d3e258597173fd0b0_stats-dashboard-ui-kit-desktop-1.webp" 
+                    alt="AI Media Planning Dashboard" 
                     className="rounded-lg shadow-lg w-full"
                   />
                 </div>
