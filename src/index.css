@@ -14,24 +14,24 @@
     --popover: 0 0% 100%;
     --popover-foreground: 248 35% 15%;
 
-    --primary: 266 100% 64%;
+    --primary: 270 76% 53%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 230 50% 96%;
+    --secondary: 270 50% 96%;
     --secondary-foreground: 248 35% 15%;
 
-    --muted: 214 32% 91%;
+    --muted: 270 32% 91%;
     --muted-foreground: 248 20% 40%;
 
-    --accent: 266 100% 96%;
+    --accent: 270 75% 95%;
     --accent-foreground: 248 35% 15%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 248 22% 88%;
-    --input: 248 22% 88%;
-    --ring: 266 100% 64%;
+    --border: 270 22% 88%;
+    --input: 270 22% 88%;
+    --ring: 270 76% 53%;
 
     --radius: 0.5rem;
 
@@ -58,15 +58,15 @@
 
 @layer components {
   .gradient-heading {
-    @apply bg-gradient-to-br from-brand-700 to-brand-500 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-violet-600 to-pink-500 bg-clip-text text-transparent;
   }
   
   .btn-primary {
-    @apply bg-brand-600 hover:bg-brand-700 text-white px-6 py-3 rounded-md shadow-md hover:shadow-lg transition-all duration-300;
+    @apply bg-gradient-to-r from-violet-600 to-pink-500 text-white px-6 py-3 rounded-md shadow-md hover:opacity-90 transition-all duration-300;
   }
   
   .btn-secondary {
-    @apply bg-white hover:bg-gray-50 text-brand-600 border border-brand-600 px-6 py-3 rounded-md shadow-sm hover:shadow-md transition-all duration-300;
+    @apply bg-white hover:bg-gray-50 text-violet-600 border border-violet-600 px-6 py-3 rounded-md shadow-sm hover:shadow-md transition-all duration-300;
   }
   
   .card-hover {
@@ -75,5 +75,13 @@
   
   .section-padding {
     @apply py-16 md:py-24;
+  }
+
+  .gradient-border {
+    @apply border border-transparent bg-gradient-to-r from-violet-600 to-pink-500 bg-clip-border;
+  }
+
+  .gradient-bg {
+    @apply bg-gradient-to-r from-violet-600 to-pink-500;
   }
 }
